@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>机构列表</title>
+		<link rel="stylesheet" type="text/css" href="css/organtList.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.backpadding').on('mouseover',function(){
+					$(this).addClass('borderActive');
+					$(this).siblings().removeClass('borderActive');
+					$(this).parent('.row').siblings().find('.backpadding').removeClass('borderActive');
+				})
+				$('.titleIMG').on('click',function(){
+					$('.contentWrap').load('html/organization/organization.html');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container">
+				<div class="row Marg">
+					<div class="col-md-3 pagerleft">
+						<ul class="List" id="doctorList">
+							<li class="recomDoc"><h3 class="comColor">推荐医生</h3><img class="Anglepurple" src="img/formleft.png"  /></li>
+					 		<li>
+								<p>医生姓名</p>
+								<p class="organColor">所属机构：<span class="organName">机构名称</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>医生姓名</p>
+								<p class="organColor">所属机构：<span class="organName">机构名称</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>医生姓名</p>
+								<p class="organColor">所属机构：<span class="organName">机构名称</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>医生姓名</p>
+								<p class="organColor">所属机构：<span class="organName">机构名称</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>医生姓名</p>
+								<p class="organColor">所属机构：<span class="organName">机构名称</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>医生姓名</p>
+								<p class="organColor">所属机构：<span class="organName">机构名称</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li> 
+							
+							
+						</ul>
+					</div>
+					<div class="col-md-9 pagerright">
+						<div class="row">
+							<div class="col-md-12 distance">
+								<ul class="breadcrumb"> 
+								    <li><a href="index.html">首页</a></li> 
+								    <li class="active">社区机构</li> 
+								</ul>
+							</div>
+						</div>
+						<div id="stationList"></div>
+						 <div class="row">
+							<div class="col-sm-6 borderActive backpadding">
+								<div class="wrap">
+									<div class="siderBar">
+										<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\594521d2-7b20-4379-bd01-1a7d59f9156d.jpg"/>
+									</div>
+									
+									<h3 class="orName">机构名称</h3>
+									<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府"><span>地址：</span><span>天府大道二段天府三街西安南路太远大厦6栋5666楼天府</span></p>
+									<div class="organDetail">
+										<a class="Docdetails" href="javascript:void(0);">机构详情</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 backpadding">
+								<div class="wrap">
+									<div class="siderBar">
+										<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\594521d2-7b20-4379-bd01-1a7d59f9156d.jpg"/>
+									</div>
+									<h3 class="orName">机构名称</h3>
+									<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府"><span>地址：</span><span>天府大道二段天府三街西安南路太远大厦6栋5666楼天府</span></p>
+									<div class="organDetail">
+										<a class="Docdetails" href="javascript:void(0);">机构详情</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 backpadding">
+								<div class="wrap">
+									<div class="siderBar">
+										<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\594521d2-7b20-4379-bd01-1a7d59f9156d.jpg"/>
+									</div>
+									
+									<h3 class="orName">机构名称</h3>
+									<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府"><span>地址：</span><span>天府大道二段天府三街西安南路太远大厦6栋5666楼天府</span></p>
+									<div class="organDetail">
+										<a class="Docdetails" href="javascript:void(0);">机构详情</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 backpadding ">
+								<div class="wrap">
+									<div class="siderBar">
+										<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\594521d2-7b20-4379-bd01-1a7d59f9156d.jpg"/>
+									</div>
+									<h3 class="orName">机构名称</h3>
+									<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府"><span>地址：</span><span>天府大道二段天府三街西安南路太远大厦6栋5666楼天府</span></p>
+									<div class="organDetail">
+										<a class="Docdetails" href="javascript:void(0);">机构详情</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 backpadding">
+								<div class="wrap">
+									<div class="siderBar">
+										<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\594521d2-7b20-4379-bd01-1a7d59f9156d.jpg"/>
+									</div>
+									<h3 class="orName">机构名称</h3>
+									<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府"><span>地址：</span><span>天府大道二段天府三街西安南路太远大厦6栋5666楼天府</span></p>
+									<div class="organDetail">
+										<a class="Docdetails" href="javascript:void(0);">机构详情</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 backpadding">
+								<div class="wrap">
+									<div class="siderBar">
+										<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\594521d2-7b20-4379-bd01-1a7d59f9156d.jpg"/>
+									</div>
+									<h3 class="orName">机构名称</h3>
+									<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府"><span>地址：</span><span>天府大道二段天府三街西安南路太远大厦6栋5666楼天府</span></p>
+									<div class="organDetail">
+										<a class="Docdetails" href="javascript:void(0);">机构详情</a>
+									</div>
+								</div>
+							</div>
+						</div> 
+						<!--<div class="moreactivty"><img src="img/web_activity2.png" onclick="loadMoreData()" style="cursor: pointer;"/></div>-->
+					</div>
+				</div>
+				
+			</div>
+	</body>
+</html>
+
+

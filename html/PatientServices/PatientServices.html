@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>患者服务列表</title>
+		<link rel="stylesheet" type="text/css" href="css/PatientServices.css"/>
+		<script type="text/javascript" src="js/jqueryPage.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//调用分页插件
+				$("#jqueryPage").pagination({
+					count: 100, //总数
+					size: 10, //每页数量
+					index: 1,//当前页
+					lrCount: 3,//当前页左右最多显示的数量
+					lCount: 1,//最开始预留的数量
+					rCount: 1,//最后预留的数量
+					callback: function (options) {
+						alert(options.index);           
+						//options.count = 300;
+						//return options;
+					},
+					beforeRender: function (jA) {
+						//jA.attr("href","default.php?index="+jA.text());
+					}
+				});
+				$('.Infomiterm li').on('click',function(){
+					$(this).find('a').addClass('a_active');
+					$(this).siblings().find('a').removeClass('a_active');
+				});
+				$('.consult').on('click',function(){
+					$('#list').load('html/PatientServices/consultation.html');
+				});
+				$('.servList').on('click',function(){
+					$('#list').load('html/PatientServices/servList.html');
+				});
+				
+				$('.yueyueIMG').on('click',function(){
+					$('.contentWrap').load('html/PatientServices/appointRecord.html');
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class=" container">
+		<div class="row Marg">
+			<div class="col-md-3 pagerleft">
+				<ul class="List" id="recommended">
+					<li class="recomDoc"><h3 class="comColor">在线医生</h3><img class="Anglepurple" src="img/formleft.png"  /></li>
+					<li>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 clearpad clear5"><img class="smalldoc" src="img/smalldoc.jpg"/></div>
+							<div class="col-sm-4 col-xs-4 clearpad clear2">
+								<p class="docName">医生姓名</p>
+								<p class="deptcolor">主治医师</p>
+							</div>
+							<div class="col-sm-4 col-xs-4 clear2">
+								<p>&nbsp</p>
+								<p class="deptcolor">科室</p>
+							</div>
+						</div>
+						<img class="sepratorLine" src="img/seprator.png"/>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 clearpad clear5"><img class="smalldoc" src="img/smalldoc.jpg"/></div>
+							<div class="col-sm-4 col-xs-4 clearpad clear2">
+								<p class="docName">医生姓名</p>
+								<p class="deptcolor">主治医师</p>
+							</div>
+							<div class="col-sm-4 col-xs-4 clear2">
+								<p>&nbsp</p>
+								<p class="deptcolor">科室</p>
+							</div>
+						</div>
+						<img class="sepratorLine" src="img/seprator.png"/>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 clearpad clear5"><img class="smalldoc" src="img/smalldoc.jpg"/></div>
+							<div class="col-sm-4 col-xs-4 clearpad clear2">
+								<p class="docName">医生姓名</p>
+								<p class="deptcolor">主治医师</p>
+							</div>
+							<div class="col-sm-4 col-xs-4 clear2">
+								<p>&nbsp</p>
+								<p class="deptcolor">科室</p>
+							</div>
+						</div>
+						<img class="sepratorLine" src="img/seprator.png"/>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 clearpad clear5"><img class="smalldoc" src="img/smalldoc.jpg"/></div>
+							<div class="col-sm-4 col-xs-4 clearpad clear2">
+								<p class="docName">医生姓名</p>
+								<p class="deptcolor">主治医师</p>
+							</div>
+							<div class="col-sm-4 col-xs-4 clear2">
+								<p>&nbsp</p>
+								<p class="deptcolor" title="科室sdfsdfsdfsdfsdfsdf">科室sdfsdfsdfsdfsdfsdf</p>
+							</div>
+						</div>
+						<img class="sepratorLine" src="img/seprator.png"/>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 clearpad clear5"><img class="smalldoc" src="img/smalldoc.jpg"/></div>
+							<div class="col-sm-4 col-xs-4 clearpad clear2">
+								<p class="docName">医生姓名</p>
+								<p class="deptcolor">主治医师</p>
+							</div>
+							<div class="col-sm-4 col-xs-4 clear2">
+								<p>&nbsp</p>
+								<p class="deptcolor">科室</p>
+							</div>
+						</div>
+						<img class="sepratorLine" src="img/seprator.png"/>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 clearpad clear5"><img class="smalldoc" src="img/smalldoc.jpg"/></div>
+							<div class="col-sm-4 col-xs-4 clearpad clear2">
+								<p class="docName">医生姓名</p>
+								<p class="deptcolor">主治医师</p>
+							</div>
+							<div class="col-sm-4 col-xs-4 clear2">
+								<p>&nbsp</p>
+								<p class="deptcolor">科室</p>
+							</div>
+						</div>
+						<img class="sepratorLine" src="img/seprator.png"/>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4 clearpad clear5"><img class="smalldoc" src="img/smalldoc.jpg"/></div>
+							<div class="col-sm-4 col-xs-4 clearpad clear2">
+								<p class="docName">医生姓名</p>
+								<p class="deptcolor">主治医师</p>
+							</div>
+							<div class="col-sm-4 col-xs-4 clear2">
+								<p>&nbsp</p>
+								<p class="deptcolor">科室</p>
+							</div>
+						</div>
+						<img class="sepratorLine" src="img/seprator.png"/>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-9 pagerright">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="breadcrumb">
+							<li><a href="#">首页</a></li>
+							<li><a href="#">患者服务</a></li>
+							<li class="active">预约挂号</li>
+						</ul>
+					</div>
+				</div>
+				<!--<div class="underL">&nbsp;</div>-->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="Infom">
+							<div class="wrap">
+								<ul class="Infomiterm">
+									<li class="servList"><a class="a_active" href="javascript:void(0)">预约挂号</a></li>
+									<li class="clearright consult"><a href="javascript:void(0)">就诊指南</a></li>
+									<li class="clearright"><a href="javascript:void(0)">&nbsp;</a></li>
+									<li class="clearright"><a href="javascript:void(0)">&nbsp;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 clearBox">
+						
+						<div class="col-md-8 col-xs-8 serIput2">
+							<input type="text" class="serIput" id="" placeholder="请输入医生姓名" />
+							
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<span class="serSpan">搜索</span>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row lgt">
+					<div class="col-md-12 underline"></div>
+				</div>
+				
+				<!--中间内容-->
+				<div id="list">
+					
+				<!--没有数据的时候提示！-->
+				<!--<div class="Prompt">
+					没有数据！
+				</div>-->
+				<!--没有数据的时候提示！end-->
+				
+				<div class="row bottomdistance">
+					<div class="col-md-6">
+						<div class="divdwrap">
+							<div class="col-md-5 kjhg col-xs-6">
+								<div class="siderBar">
+									<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\7a32b6f1-2c4b-478e-9b63-fdf1da557b27.jpg">
+								</div>
+							</div>
+							<div class="col-md-7 col-xs-6">
+								<div class="wraptt">
+									<h3 class="Articlecolor">张美丽</h3>
+									<p class="marginName">主任</p>
+									<p class="marginName docspvname">
+										<b>所属机构：</b><b>华西医院</b>
+									</p>
+									<span class="yueyueIMG">
+										<img src="img/web_serv1.png">
+										<b class="yuetext">预约</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="divdwrap">
+							<div class="col-md-5 kjhg col-xs-6">
+								<div class="siderBar">
+									<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\b32ed173-d0d1-4924-b698-e4a0cb938ede.jpg">
+								</div>
+							</div>
+							<div class="col-md-7 col-xs-6">
+								<div class="wraptt">
+									<h3 class="Articlecolor">代旭</h3>
+									<p class="marginName">精神病主任</p>
+									<p class="marginName docspvname">
+										<b>所属机构：</b>
+										<b>undefined</b>
+									</p>
+									<span class="yueyueIMG">
+										<img src="img/web_serv2.png">
+										<b class="yuetext">预约</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row bottomdistance">
+					<div class="col-md-6">
+						<div class="divdwrap">
+							<div class="col-md-5 kjhg col-xs-6">
+								<div class="siderBar">
+									<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\4d28a727-8385-4290-bc0f-f9f854286f9b.jpg">
+								</div>
+							</div>
+							<div class="col-md-7 col-xs-6">
+								<div class="wraptt">
+									<h3 class="Articlecolor">张美丽</h3>
+									<p class="marginName">主任</p>
+									<p class="marginName docspvname">
+										<b>所属机构：</b><b>华西医院</b>
+									</p>
+									<span class="yueyueIMG">
+										<img src="img/web_serv1.png">
+										<b class="yuetext">预约</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="divdwrap">
+							<div class="col-md-5 kjhg col-xs-6">
+								<div class="siderBar">
+									<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\e3502d23-085f-4592-bab0-e6f321031c95.jpg">
+								</div>
+							</div>
+							<div class="col-md-7 col-xs-6">
+								<div class="wraptt">
+									<h3 class="Articlecolor">代旭</h3>
+									<p class="marginName">精神病主任</p>
+									<p class="marginName docspvname">
+										<b>所属机构：</b>
+										<b>undefined</b>
+									</p>
+									<span class="yueyueIMG">
+										<img src="img/web_serv2.png">
+										<b class="yuetext">预约</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row bottomdistance">
+					<div class="col-md-6">
+						<div class="divdwrap">
+							<div class="col-md-5 kjhg col-xs-6">
+								<div class="siderBar">
+									<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\35eb9a7a-0786-4a4e-95d3-f01acfa26b7f.jpg">
+								</div>
+							</div>
+							<div class="col-md-7 col-xs-6">
+								<div class="wraptt">
+									<h3 class="Articlecolor">张美丽</h3>
+									<p class="marginName">主任</p>
+									<p class="marginName docspvname">
+										<b>所属机构：</b><b>华西医院</b>
+									</p>
+									<span class="yueyueIMG">
+										<img src="img/web_serv1.png">
+										<b class="yuetext">预约</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="divdwrap">
+							<div class="col-md-5 kjhg col-xs-6">
+								<div class="siderBar">
+									<img class="titleIMG" src="http://118.123.173.101:8088/upload/thumbs\c3ecf113-3b8d-4ca1-bd40-2097f9b2f7ab.jpg">
+								</div>
+							</div>
+							<div class="col-md-7 col-xs-6">
+								<div class="wraptt">
+									<h3 class="Articlecolor">代旭</h3>
+									<p class="marginName">精神病主任</p>
+									<p class="marginName docspvname">
+										<b>所属机构：</b>
+										<b>undefined</b>
+									</p>
+									<span class="yueyueIMG">
+										<img src="img/web_serv2.png">
+										<b class="yuetext>预约</b>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="row pagetop">
+					<div class="col-md-12">
+						<div class="jqueryPage" id="jqueryPage">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+				
+
+
+

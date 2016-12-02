@@ -1,0 +1,74 @@
+
+
+
+
+
+.titleIMG{
+	width: auto;
+	height: 190px;
+}
+.siderBar{
+    height: 190px;
+    width: 100%;
+    overflow: hidden;
+}
+b{
+	font-weight: normal;
+}
+.recomDoc{
+	position: relative;
+	color: #7c4198;
+}
+
+.wrap{
+	border-bottom: 1px solid lightgray;
+}
+.bootss{
+	color: 	#505050;
+}
+
+
+.oparte{
+	text-align: center;
+    padding: 10px 0px;
+    font-size: 17px;
+	background: url(../img/webdoc.png) no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+}
+.organN{
+	display: inline-block;
+	margin-left: 10px;
+}
+.Color2{
+	color: #434343;
+}
+.docinFo{
+	position: relative;
+	
+}
+.dept{
+	position: absolute;
+	display: inline-block;
+	right:0px ;
+	top: 28px;
+}
+
+
+
+
+
+.acttop{
+	margin-top: 20px;
+}
+.leftpad{
+	padding-left: 50px;
+}
+
+.centerpad{
+	/*padding-left: 17px !important;*/
+	padding-left: 0px !important;
+}
+.deptNAme,.DocName{
+	cursor: pointer;
+}

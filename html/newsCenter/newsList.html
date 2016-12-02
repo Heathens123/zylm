@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/newsList.css"/>
+		<script type="text/javascript" src="js/jqueryPage.js"></script>
+		<title></title>
+		<script type="text/javascript">
+			$(function(){
+				//调用分页插件
+				$("#jqueryPage").pagination({
+					count: 100, //总数
+					size: 10, //每页数量
+					index: 1,//当前页
+					lrCount: 3,//当前页左右最多显示的数量
+					lCount: 1,//最开始预留的数量
+					rCount: 1,//最后预留的数量
+					callback: function (options) {
+						alert(options.index);           
+						//options.count = 300;
+						//return options;
+					},
+					beforeRender: function (jA) {
+						//jA.attr("href","default.php?index="+jA.text());
+					}
+				});
+				
+				$('.backpadding').on('mouseover',function(){
+					$(this).addClass('borderActive');
+					$(this).siblings().removeClass('borderActive');
+					$(this).parent('.rowactive').siblings().find('.backpadding').removeClass('borderActive');
+				})
+				$('#newsimgs').on('click',function(){
+					$('.contentList').load('html/newsCenter/carousel.html')
+				})
+				$('.titleIMG').on('click',function(){
+					$('.contentList').load('html/newsCenter/carousel.html');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="row rowactive">
+			<div class="col-sm-4 borderActive backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row rowactive">
+			<div class="col-sm-4  backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="row rowactive">
+			<div class="col-sm-4  backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 backpadding">
+				<div class="wrap22">
+					<img class="titleIMG" src="img/web_01.jpg"/>
+					<p class="ellipsis boot" title="天府大道二段天府三街西安南路太远大厦6栋5666楼天府">天府大道二段天府三街西安南路太远大厦6栋5666楼天府</p>
+					<div class="organDetail">
+						<a class="Docdetails" href="javascript:void(0);">图库详情</a>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!--分页-->
+		<div class="row pagetop">
+			<div class="col-md-12 ">
+				<div class="jqueryPage" id="jqueryPage"></div>
+			</div>
+		</div>
+	</body>
+</html>

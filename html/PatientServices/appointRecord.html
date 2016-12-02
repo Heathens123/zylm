@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/appointRecord.css"/>
+		<script type="text/javascript" src="js/jqueryPage.js"></script>
+		<script>
+			$(function(){
+				//调用分页插件
+				$("#jqueryPage").pagination({
+					count: 100, //总数
+					size: 10, //每页数量
+					index: 1,//当前页
+					lrCount: 3,//当前页左右最多显示的数量
+					lCount: 1,//最开始预留的数量
+					rCount: 1,//最后预留的数量
+					callback: function (options) {
+						alert(options.index);           
+						//options.count = 300;
+						//return options;
+					},
+					beforeRender: function (jA) {
+						//jA.attr("href","default.php?index="+jA.text());
+					}
+				});
+			})
+		</script>
+		<title>预约记录</title>
+	</head>
+	<body>
+		
+		<!-- 中心区域 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 medicImgWrap">
+                    <img class="medicImg" src="img/medic3.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <p class="myApoint">我的预约</p>
+                </div>
+            </div>
+            <!--<div class="tableWrap" id="list">
+            	<div class="row tableHead">
+            		<div class="col-md-3 col-xs-2 common ellipsis2" title="日期">预约流水号</div>
+            		<div class="col-md-2 col-xs-2 common ellipsis2" title="排班时间">预约时间</div>
+            		<div class="col-md-2 col-xs-2 common ellipsis2" title="排班号">预约科室</div>
+            		<div class="col-md-1 col-xs-2 common ellipsis2" title="剩余号">预约医生</div>
+            		<div class="col-md-1 col-xs-2 common ellipsis2" title="价格">就诊类型</div>
+            		<div class="col-md-3 col-xs-2 common ellipsis2" title="预约挂号">操作</div>
+            	</div>
+            	<div class="row tableBody">
+            		<div class="col-md-3 col-xs-2 combody ellipsis noboeder Times">12024545</div>
+            		<div class="col-md-2 col-xs-2 combody ellipsis noboeder">2016-10-05</div>
+					<div class="col-md-2 col-xs-2 combody ellipsis noboeder">血液科</div>
+					<div class="col-md-1 col-xs-2 combody ellipsis noboeder">刘建军</div>
+					<div class="col-md-1 col-xs-2 combody ellipsis noboeder">已就诊</div>
+					<div class="col-md-3 col-xs-2 combody ellipsis cancelApint"><a href="">取消预约</a></div>
+        		</div>
+        		<div class="row tableBody">
+            		<div class="col-md-3 col-xs-2 combody ellipsis noboeder Times">12024545</div>
+            		<div class="col-md-2 col-xs-2 combody ellipsis noboeder">2016-10-05</div>
+					<div class="col-md-2 col-xs-2 combody ellipsis noboeder">血液科</div>
+					<div class="col-md-1 col-xs-2 combody ellipsis noboeder">刘建军</div>
+					<div class="col-md-1 col-xs-2 combody ellipsis noboeder">已就诊</div>
+					<div class="col-md-3 col-xs-2 combody ellipsis cancelApint"><a href="">取消预约</a></div>
+        		</div>
+        		<div class="row tableBody">
+            		<div class="col-md-3 col-xs-2 combody ellipsis noboeder Times">12024545</div>
+            		<div class="col-md-2 col-xs-2 combody ellipsis noboeder">2016-10-05</div>
+					<div class="col-md-2 col-xs-2 combody ellipsis noboeder">血液科</div>
+					<div class="col-md-1 col-xs-2 combody ellipsis noboeder">刘建军</div>
+					<div class="col-md-1 col-xs-2 combody ellipsis noboeder">已就诊</div>
+					<div class="col-md-3 col-xs-2 combody ellipsis cancelApint"><a href="">取消预约</a></div>
+        		</div>
+            </div>-->
+            <div class="table-responsive tableWrap">
+			  <table class="table">
+			    <tr class="tabhead">
+			    	<td>预约流水号</td>
+			    	<td>预约时间</td>
+			    	<td>就诊时间</td>
+			    	<td>预约科室</td>
+			    	<td>预约医生</td>
+			    	<td>就诊类型</td>
+			    	<td>操作</td>
+			    </tr>
+			    <tr>
+			    	<td>1610000002</td>
+			    	<td>2016-10-17</td>
+			    	<td>2016-10-18</td>
+			    	<td>全科诊室</td>
+			    	<td>陈娟</td>
+			    	<td><a href="javascript:void(0);">取消预约</a></td>
+			    	<td><a href="javascript:void(0);">预约</a></td>
+			    </tr>
+			    <tr>
+			    	<td>1610000002</td>
+			    	<td>2016-10-17</td>
+			    	<td>2016-10-18</td>
+			    	<td>全科诊室</td>
+			    	<td>陈娟</td>
+			    	<td><a href="javascript:void(0);">取消预约</a></td>
+			    	<td><a href="javascript:void(0);">预约</a></td>
+			    </tr>
+			    <tr>
+			    	<td>1610000002</td>
+			    	<td>2016-10-17</td>
+			    	<td>2016-10-18</td>
+			    	<td>全科诊室</td>
+			    	<td>陈娟</td>
+			    	<td><a href="javascript:void(0);">取消预约</a></td>
+			    	<td><a href="javascript:void(0);">预约</a></td>
+			    </tr>
+			  </table>
+			</div>
+            <div class="row pagetop">
+				<div class="col-md-12">
+					
+					<div class="jqueryPage" id="jqueryPage"></div>
+
+				</div>
+			</div>
+        </div>
+	</body>
+</html>

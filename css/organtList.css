@@ -1,0 +1,60 @@
+
+			.titleIMG{
+			    width: auto;
+				height: 190px;
+			}
+			.siderBar{
+			    height: 190px;
+			    width: 100%;
+			    overflow: hidden;
+			}
+			
+			.recomDoc{
+				position: relative;
+				color: #7c4198;
+			}
+			
+			/*.wrap{
+				border-bottom: 1px solid lightgray;
+			}*/
+			.boot{
+				padding-bottom: 7px;
+				cursor: pointer;
+			}
+			.Docdetails{
+				border: 1px solid #7e272d;
+				border-radius: 5px;
+				padding: 4px 16px;
+				color: #7e272d;
+				font-size: 16px;
+			}
+			.organDetail{
+				padding-bottom: 15px;
+				text-align: left;
+			}
+			.backpadding{
+				padding: 30px 40px 20px 40px;
+			}
+			.borderActive{
+				background: url(../img/web_orgin.jpg) no-repeat;
+				background-size: 100% 100%;
+				-webkit-background-size: 100% 100%;
+				
+			}
+			.breadcrumb{
+				border-bottom: 1px solid lightgray;
+				padding-bottom: 15px;
+			
+			}
+			.distance{
+				margin-bottom: 2px;
+			}
+			
+@media (max-width: 768px){
+	.siderBar,.orName,.boot,.organDetail{
+		text-align: center;
+	}
+}
+/*@media (min-width: 769px){
+	
+}*/

@@ -1,0 +1,208 @@
+
+.moregongg{
+	text-align: right;
+	position: relative;
+	top: 28px;
+}
+
+
+.wrapp{
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.wrapp2{
+	padding: 27px 38px 0px 53px;
+	margin-bottom: 30px;
+	background: url(../img/web_ggbackg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.ggwrap{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.bottompad{
+	padding-bottom: 10px;
+}
+.introduce a{
+	font-size: 16px;
+	color: #535353;
+	
+}
+.introduce a:hover{
+	text-decoration: none;
+	color: #7e272d;
+}
+.ggTime{
+	text-align: right;
+	color: #999999;
+	font-size: 16px;
+}
+
+.diandain{
+	  
+	overflow: hidden;
+	text-overflow:ellipsis;
+	/*white-space: nowrap;*/
+	display: -webkit-box;  
+	-webkit-line-clamp: 2;  
+	-webkit-box-orient: vertical;
+	text-overflow: -o-ellipsis-lastline;
+}
+.Align{
+	/*text-align: left !important;*/
+	color: #7d7d7d;
+	font-size: 14px;
+	height: 41px;
+	
+}
+.comonsize{
+	font-size: 15px;
+}
+/*首页头像圆形*/
+.OrganImg{
+	overflow: hidden;
+	height: 120px;
+	border-radius:60px;
+	width: 120px;
+	border: 5px solid #EEEEEE;
+	margin: 0px auto;
+	margin-top: 15px;
+}
+.huaxiDOC{
+	/*width: auto;
+	height: 120px;
+    position: relative;
+    left: -27px;*/
+    width: 116px;
+    height: 146px;
+    position: relative;
+    left: -3px;
+}
+/*首页头像圆形*/
+.backActive{
+	background: url(../img/web_doc_chioce.jpg) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+.backBorder{
+	text-align: center;
+}
+.detailbutton{
+	padding: 10px 0 30px 0;
+	
+}
+.docpadding{
+	padding: 0 15px 0 15px;
+}
+.docname{
+	display: inline-block;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #7e272d;
+}
+.Docdetails{
+	border: 1px solid #7e272d;
+	border-radius: 5px;
+	padding: 4px 16px;
+	color: #7e272d;
+	font-size: 16px;
+}
+.moreDocwrap{
+	text-align: center;
+	padding: 30px 0;
+}
+.moreDoctor{
+	font-size: 16px;
+	display: inline-block;
+	padding: 10px 70px;
+	background: url(../img/moredoctor.png);
+	background-size: 100% 100%;
+}
+.moreDoctor a{
+	color: #7e272d;	
+}
+@media (max-width: 767px){
+	.ggtitle{
+		font-size: 16px;
+		text-align: center;
+		color: #822c2f;
+	}
+	.ggtitle2{
+		font-size: 16px;
+		/*text-align: center;*/
+		color: #822c2f;
+	}
+	.moregg{
+		color: #822c2f;
+		font-size: 16px;
+		position: relative;
+		top: -10px;
+	}
+	.picScroll-left .bd{
+		/*width: 357px;*/
+		width: 304px;
+	}
+	.wrapp2{
+		padding: 27px 5px 0px 5px;
+	}
+	.introduce a,.ggTime{
+		font-size: 14px;
+	}
+	.ggtitle,.ggtitle2{
+		margin-top: 10px;
+	}
+	.moregongg{
+		top: 17px;
+	}
+	.web_gonggao,.web_Organ{
+		/*width:100%;*/
+		width:40px;
+		height: 40px;
+	}
+}
+@media (min-width: 768px){
+	.moregg{
+		color: #822c2f;
+		font-size: 18px;
+	}
+	.ggtitle,.ggtitle2{
+		color: #822c2f;
+	}
+	
+}
+
+
+
+ 
+.hosptalCenter{
+	font-size: 18px;
+	color: #7e272d;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+
+/*banner图按钮样式*/
+/*.carousel-indicators li{
+	width: 32px;
+	background: white;
+	border-radius: 0;
+	border: none;
+}
+.carousel-indicators .active {
+    width: 32px;
+    height: 10px;
+    background-color: #7e272d;
+    position: relative;
+    top: -1px;
+}*/
+
+.carousel-indicators li{
+	background: white;
+	border: none;
+}
+.carousel-indicators .active{
+	background-color: #7e272d;
+}
+/*banner图按钮样式--end*/

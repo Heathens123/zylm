@@ -1,0 +1,121 @@
+
+
+
+.tableHead,.docImg,.tableBody{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.appointment{
+	display: none;
+}
+.appint{
+		width: 57%;
+	}
+
+/*.tableWrap{
+	margin-top: 25px;
+	padding-left: 15px;
+    padding-right: 15px;
+}
+.tableHead{
+	height: 50px;
+	background: #822b31;
+}
+.tableBody{
+	height: 50px;
+	
+}*/
+
+/*.ellipsis2{
+	overflow: hidden;  
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ellipsis{
+	text-overflow: -o-ellipsis-lastline;  
+	overflow: hidden;  
+	text-overflow: ellipsis;  
+	display: -webkit-box;  
+	-webkit-line-clamp: 2;  
+	-webkit-box-orient: vertical;
+}
+.common{
+	border-top: none;
+	height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	padding-top: 15px;
+	cursor: pointer;
+}
+.combody{
+	text-align: center;
+	height: 50px;
+	padding-top: 15px;
+	color: gray;
+	font-size: 15px;
+	border: 1px solid lightgray;
+	border-top: none;
+}
+.noboeder{
+	border-right: none;
+}*/
+.appint{
+	display: inline-block;
+	height: 30px;
+	font-size: 14px;
+	border:1px solid #822b31;
+	color: #822b31;
+	border-radius: 4px;
+	padding-top: 5px;
+}
+/*.padtop{
+	padding-top: 10px !important;
+}*/
+.appint:hover{
+	text-decoration: none;
+	color: #822b31;
+}
+.tablerespon{
+	background: #7e272d;
+	color: white;
+}
+.Table{
+	padding: 0 15px;
+	margin-top: 30px;
+}
+tr td{
+	text-align: center;
+}
+
+@media (min-width: 992px){
+
+}
+@media (max-width: 991px){
+	
+	.price{
+		height: 50px;
+	}
+	.common,.combody{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+}
+@media (max-width: 768px){
+	.table-responsive{
+		border: none;
+	}
+	.Table{
+		padding: 0;
+		
+	}
+}
+
+@media (max-width: 568px){
+	.Times{
+		padding-top: 2px !important;
+	}
+}

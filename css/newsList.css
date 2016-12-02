@@ -1,0 +1,46 @@
+.titleIMG{
+				width: 100%;
+				height: 190px;
+			}
+			
+			
+			.recomDoc{
+				position: relative;
+				color: #7c4198;
+			}
+			
+			/*.wrap{
+				border-bottom: 1px solid lightgray;
+			}*/
+			.boot{
+				padding: 10px 25px 5px 25px;
+				cursor: pointer;
+				text-align: center;
+			}
+			.Docdetails{
+				border: 1px solid #7e272d;
+				border-radius: 5px;
+				padding: 4px 16px;
+				color: #7e272d;
+				font-size: 16px;
+			}
+			.organDetail{
+				padding-bottom: 15px;
+				text-align: center;
+			}
+			.backpadding{
+				padding: 30px 30px 20px 30px;
+			}
+			.borderActive{
+				background: url(../img/web_orgin.jpg) no-repeat;
+				background-size: 100% 100%;
+				-webkit-background-size: 100% 100%;
+				
+			}
+			
+			.distance{
+				margin-bottom: 2px;
+			}
+			.contentList {
+			    margin-top: 40px;
+			}

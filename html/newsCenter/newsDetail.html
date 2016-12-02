@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>新闻详情</title>
+	<link rel="stylesheet" type="text/css" href="css/newsDetail.css"/>
+	<script type="text/javascript" src="js/jqueryPage.js"></script>
+	<script type="text/javascript" src="js/fenye.js"></script>
+	<script type="text/javascript" >
+	$(function() {
+			String.prototype.GetValue = function(para) {
+				var reg = new RegExp("(^|&)" + para + "=([^&]*)(&|$)");
+				var r = this.substr(this.indexOf("\?") + 1).match(reg);
+				if(r != null) return unescape(r[2]);
+				return null;
+			}
+			var str = location.url;
+			alert(str.GetValue("name"));
+			
+			$('#news').on('click',function(){
+				$('.contentList').load('html/newsCenter/newscontent.html');
+			})
+			$('.breadnews').on('click',function(){
+				$('.contentList').load('html/newsCenter/newscontent.html');
+			})
+		})
+	</script>
+</head>
+<body>
+	<!--内容区-->
+			<!--<div class=" container">
+				<div class="row Marg">
+					<div class="col-md-3 pagerleft">
+						<ul class="List" id="deptList">
+							<li class="recomDoc"><h3 class="comColor">栏目热点</h3><img class="Anglepurple" src="img/formleft.png"  /></li>
+							 <li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">2016-08-09</p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">2016-08-09</p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">2016-08-09</p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">2016-08-09</p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">2016-08-09</p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">2016-08-09</p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">2016-08-09</p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li> 
+						</ul>
+					</div>
+					<div class="col-md-9 pagerright">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb"> 
+								     <li><a href="javascript:void(0)">首页</a></li> 
+								    <li><a class="breadnews" href="javascript:void(0)">新闻中心</a></li>
+								    <li><a class="" href="javascript:void(0)"> 全部新闻</a></li>
+								    <li class="active">新闻详情</li> 
+								</ul>
+							</div>
+						</div>
+						<div class="Infom">
+							<div class="wrap">
+								<ul class="Infomiterm">
+									<li id="news"><a class="a_active" href="javascript:void(0);">全部新闻</a></li>
+									<li id="pointnews"><a href="javascript:void(0);">重大新闻</a></li>
+									<li id="unnion"><a href="javascript:void(0);">联盟公告</a></li>
+									<li id="newsimgs" ><a href="javascript:void(0);">精彩图集</a></li>
+								</ul>
+							</div>
+						</div>-->
+						<!--11111111111-->
+						<div class="contentList">
+							<h3 class="artTitle">文章标题</h3>
+							<div class="source">
+								<div class="souWrap">
+									<span class="year">2016-08-30</span><span class="clock">14:25</span><span class="comesource">来源：</span><span class="sourceName">dfgd</span>
+								</div>
+							</div>
+						
+							<div class="row bottomdistance">
+								<div class="col-sm-12">
+									<p class="Textindent">
+										为促进中医药国际化产学研联盟这一国家重大项目具有可操作性，切实的推动中医药国际化进程，以天士力为首的国内16家中药生产、
+										研发单位以中医药国际化产学研联盟为基础，本着自发、自愿的原则，发起组成中医药世界联盟( TRADITIONAL CHINESE MEDICINE GLOBAL ALLIANCE )。
+										中医药世界联盟( TCMGA )是开放的，形式多样，坚持政府支持，企业为主，市场化运作，风险共担，利益共享的机制，重在构建平台和提供服务。
+										中医药世界联盟（TCMGA )采用“5+2”的运营模式，即包括药品注册研发中心、国际市场营销/服务贸易中心、医疗服务中心、
+										教育培训中心及中药材保护发展中心五个职能中心，
+										北美药业上市运营平台和国际医药基金二大保障体系构成。
+									</p>
+									<p class="Textindent">
+										为促进中医药国际化产学研联盟这一国家重大项目具有可操作性，切实的推动中医药国际化进程，以天士力为首的国内16家中药生产、
+										研发单位以中医药国际化产学研联盟为基础，本着自发、自愿的原则，发起组成中医药世界联盟( TRADITIONAL CHINESE MEDICINE GLOBAL ALLIANCE )。
+										中医药世界联盟( TCMGA )是开放的，形式多样，坚持政府支持，企业为主，市场化运作，风险共担，利益共享的机制，重在构建平台和提供服务。
+										中医药世界联盟（TCMGA )采用“5+2”的运营模式，即包括药品注册研发中心、国际市场营销/服务贸易中心、医疗服务中心、
+										教育培训中心及中药材保护发展中心五个职能中心，
+										北美药业上市运营平台和国际医药基金二大保障体系构成。
+									</p>
+									<p class="Textindent">
+										 为促进中医药国际化产学研联盟这一国家重大项目具有可操作性，切实的推动中医药国际化进程，以天士力为首的国内16家中药生产、
+										研发单位以中医药国际化产学研联盟为基础，本着自发、自愿的原则，发起组成中医药世界联盟( TRADITIONAL CHINESE MEDICINE GLOBAL ALLIANCE )。
+										中医药世界联盟( TCMGA )是开放的，形式多样，坚持政府支持，企业为主，市场化运作，风险共担，利益共享的机制，重在构建平台和提供服务。
+										中医药世界联盟（TCMGA )采用“5+2”的运营模式，即包括药品注册研发中心、国际市场营销/服务贸易中心、医疗服务中心、
+										教育培训中心及中药材保护发展中心五个职能中心，
+										北美药业上市运营平台和国际医药基金二大保障体系构成。
+									</p>
+									<p class="Textindent">
+										为促进中医药国际化产学研联盟这一国家重大项目具有可操作性，切实的推动中医药国际化进程，以天士力为首的国内16家中药生产、
+										研发单位以中医药国际化产学研联盟为基础，本着自发、自愿的原则，发起组成中医药世界联盟( TRADITIONAL CHINESE MEDICINE GLOBAL ALLIANCE )。
+										中医药世界联盟( TCMGA )是开放的，形式多样，坚持政府支持，企业为主，市场化运作，风险共担，利益共享的机制，重在构建平台和提供服务。
+										为促进中医药国际化产学研联盟这一国家重大项目具有可操作性，切实的推动中医药国际化进程，以天士力为首的国内16家中药生产、
+										研发单位以中医药国际化产学研联盟为基础，本着自发、自愿的原则，发起组成中医药世界联盟( TRADITIONAL CHINESE MEDICINE GLOBAL ALLIANCE )。
+										中医药世界联盟( TCMGA )是开放的，形式多样，坚持政府支持，企业为主，市场化运作，风险共担，利益共享的机制，重在构建平台和提供服务。
+										中医药世界联盟（TCMGA )采用“5+2”的运营模式，即包括药品注册研发中心、国际市场营销/服务贸易中心、医疗服务中心、
+										教育培训中心及中药材保护发展中心五个职能中心，
+										北美药业上市运营平台和国际医药基金二大保障体系构成。
+										为促进中医药国际化产学研联盟这一国家重大项目具有可操作性，切实的推动中医药国际化进程，以天士力为首的国内16家中药生产、
+										研发单位以中医药国际化产学研联盟为基础，本着自发、自愿的原则，发起组成中医药世界联盟( TRADITIONAL CHINESE MEDICINE GLOBAL ALLIANCE )。
+										中医药世界联盟( TCMGA )是开放的，形式多样，坚持政府支持，企业为主，市场化运作，风险共担，利益共享的机制，重在构建平台和提供服务。
+										中医药世界联盟（TCMGA )采用“5+2”的运营模式，即包括药品注册研发中心、国际市场营销/服务贸易中心、医疗服务中心、
+										教育培训中心及中药材保护发展中心五个职能中心，
+										北美药业上市运营平台和国际医药基金二大保障体系构成。
+									</p>
+									
+									
+								</div>
+							</div>
+						</div>
+						<!--1111111-->
+						
+						
+						<!--</div>
+					</div>
+				</div>
+				
+			</div>-->
+</body>
+</html>

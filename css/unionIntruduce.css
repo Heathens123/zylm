@@ -1,0 +1,48 @@
+
+
+.titleIMG{
+	/*width: auto;
+	height: 350px;*/
+	width: 100%;
+	height: auto;
+}
+.wrap{
+	width: 100%;
+	/*height: 350px;
+	overflow: hidden;*/
+	height: auto;
+	
+}
+.Textindent{
+	text-indent: 28px;
+	color: #444444;
+}
+.bottomdistance{
+	margin-top: 8px;
+}
+.breadcrumb{
+	margin-bottom: 0;
+}
+.unnonPading{
+	padding: 0 40px;
+}
+@media (max-width: 768px){
+	.wrap{
+		height: auto;
+	}
+	.titleIMG{
+		height: auto;
+		width: 100%;
+	}
+	.clearpadding{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.pagerright{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.unnonPading {
+	    padding: 0 25px;
+	}
+}

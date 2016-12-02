@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>机构名称</title>
+		<link rel="stylesheet" type="text/css" href="css/organization.css"/>
+		<script type="text/javascript">
+			$(function(){
+				$('.deptNAme').on('click',function(){
+					$('.contentWrap').load('html/organization/departmentDetail.html');
+				});
+				
+				$('.DocName').on('click',function(){
+					$('.contentWrap').load('html/organization/table.html');
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<!--内容区-->
+			<div class="container">
+				<div class="row Marg">
+					<div class="col-md-3 pagerleft">
+						<ul id="stationList" class="List">
+							<li class="recomDoc"><h3 class="comColor">机构列表</h3><img class="Anglepurple" src="img/formleft.png"  /></li>
+					 		<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li>
+							<li>
+								<p>成都市中和医疗机构</p>
+								<p class="organColor">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+								<img class="sepratorLine" src="img/seprator.png"/>
+							</li> 
+						</ul>
+					</div>
+					<div class="col-md-9 pagerright">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb"> 
+								    <li><a href="index.html">首页</a></li> 
+								    <li><a href="AgencyDetails.html">社区机构</a></li>
+								    <li class="active">机构名称</li> 
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="siderBar">
+									<img class="titleIMG" src="img/aaaaa.jpg" id="img"/>
+								</div>
+							</div>
+							<div class="col-sm-9">
+								<div class="wraptt">
+									<h3 id="stationName " class="organName commadd ">机构名称</h3>
+									<p class="bootss commadd"><span class="ownOrgan">机构地址：</span><span class="ownValue stationDesc "  id="stationAddr">天府大道天府五街肖家河社区XXX医院太远大厦2976室</span></p>
+									<p class="bootss commadd"><span class="ownOrgan">服务电话：</span><span class="ownValue stationDesc " id="stationContactPhone">028-874632738</span></p>
+									<p class="bootss" style="margin-bottom: 4px;">机构简介：</p>
+									<p class="bootss stationDesc" id="stationDesc">
+										四川大学华西医院在2015年公布的中国公立医院社会贡献度排行榜上总分位列全国第一，在复旦大学中国最佳专科声誉和最佳医院排行榜上，连续五年名列全国第二，
+										连续多年被独立第三方调查评选为“全国最受欢迎三甲医院” 前十强、“医疗机构最佳雇主”前十强。四川大学华西医院在2015年公布的中国公立医院社会贡献度排行
+										连续多年被独立第三方调查评选为“全国最受欢迎三甲医院” 前十强、“医疗机构最佳雇主”前十强。四川大学华西医院在2015年公布的中国公立医院社会贡献度排行
+										榜上总分位列全国第一，在复旦大学中国最佳专科声誉和最佳医院排行榜上，连续五年名列全国第二，
+									</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="row tapp">
+							<div class="col-sm-4 borderright">
+								<ul class="List" id="stoDeptList">
+									<li class="recomDoc recomDoc2"><h3 class="oparte comColor">科室结果</h3></li>
+								 	<li class="deptNAme">
+										<p class="Color2">成都市中和医疗机构</p>
+										<p class="organColor ellipsis">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+									</li>
+									<li class="deptNAme">
+										<p class="Color2">成都市中和医疗机构</p>
+										<p class="organColor ellipsis">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+									</li>
+									<li class="deptNAme">
+										<p class="Color2">成都市中和医疗机构</p>
+										<p class="organColor ellipsis">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+									</li>
+									<li class="deptNAme">
+										<p class="Color2">成都市中和医疗机构</p>
+										<p class="organColor ellipsis">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+									</li>
+									<li class="deptNAme">
+										<p class="Color2">成都市中和医疗机构</p>
+										<p class="organColor ellipsis">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+									</li>
+									<li class="deptNAme">
+										<p class="Color2">成都市中和医疗机构</p>
+										<p class="organColor ellipsis">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+									</li>
+									<li class="deptNAme">
+										<p class="Color2">成都市中和医疗机构</p>
+										<p class="organColor ellipsis">地址：<span class="organName">成都市高新区天府大道xxx号</span></p>
+									</li> 
+								</ul>
+								<div class="row">
+									<div class="col-sm-12  col-xs-12 actleft">
+										<span class="docnumber">共<b>20</b>个科室</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-xs-12 actleft">
+											<ul class="pagination pagination-sm positin2"> 
+											    <li><a href="#"><<</a></li>
+											    <li><a href="#"><</a></li> 
+											    <li class="dropdown"> 
+									                <a href="#" class="dropdown-toggle" data-toggle="dropdown">1
+									                    <b class="caret"></b> 
+									                </a> 
+									                <ul class="dropdown-menu"> 
+									                    <li> 
+									                        <a id="action-1" href="#">1</a> 
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">2</a> 
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">3</a> 
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">4</a> 
+									                    </li> 
+									                </ul> 
+									            </li> 
+											    <li><a href="#">></a></li> 
+											    <li><a href="#">>></a></li> 
+											</ul>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-sm-4 borderright">
+								<ul class="List clearleft" id="doctorList">
+									<li class="recomDoc recomDoc2 docinFo"><h3 class="oparte comColor">医生结果</h3></li>
+									 <li class="docinFo DocName">
+										<p class="Color2">医生姓名</p>
+										<p class="organColor ellipsis"><span>主任医师</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+										<img class="dept" src="img/dept.png"/>
+									</li>
+									<li class="docinFo DocName">
+										<p class="Color2">医生姓名</p>
+										<p class="organColor ellipsis"><span>副主任医师</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li class="docinFo DocName">
+										<p class="Color2">医生姓名</p>
+										<p class="organColor ellipsis"><span>主任医师</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+										<img class="dept" src="img/dept.png"/>
+									</li>
+									<li class="docinFo DocName">
+										<p class="Color2">医生姓名</p>
+										<p class="organColor ellipsis "><span>副主任医师</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li class="docinFo DocName">
+										<p class="Color2">医生姓名</p>
+										<p class="organColor ellipsis"><span>主任医师</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li class="docinFo DocName">
+										<p class="Color2">医生姓名</p>
+										<p class="organColor ellipsis"><span>副主任医师</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+										<img class="dept" src="img/dept.png"/>
+									</li>
+									<li class="docinFo DocName">
+										<p class="Color2">医生姓名</p>
+										<p class="organColor ellipsis"><span>主任医师</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+										<img class="dept" src="img/dept.png"/>
+									</li> 
+								</ul>
+								<div class="row">
+									<div class="col-sm-12  col-xs-12 actleft centerpad">
+										<span class="docnumber">共<b>20</b>名医生</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-xs-12 actleft centerpad">
+											<ul class="pagination pagination-sm positin2"> 
+											    <li><a href="#"><<</a></li>
+											    <li><a href="#"><</a></li> 
+											    <li class="dropdown"> 
+									                <a href="#" class="dropdown-toggle" data-toggle="dropdown">1
+									                    <b class="caret"></b> 
+									                </a>
+									                <ul class="dropdown-menu"> 
+									                    <li> 
+									                        <a id="action-1" href="#">1</a>
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">2</a> 
+									                    </li>
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">3</a> 
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">4</a> 
+									                    </li> 
+									                </ul> 
+									            </li> 
+											    <li><a href="#">></a></li> 
+											    <li><a href="#">>></a></li> 
+											</ul>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-sm-4">
+								<ul class="List clearleft" id="areaNurseList">
+									<li class="recomDoc recomDoc2"><h3 class="oparte comColor">护士结果</h3></li>
+								 	<li>
+										<p class="Color2 leftpad">护士姓名</p>
+										<p class="organColor ellipsis leftpad"><span>护士长</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li>
+										<p class="Color2 leftpad">护士姓名</p>
+										<p class="organColor ellipsis leftpad"><span>护士</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li>
+										<p class="Color2 leftpad">护士姓名</p>
+										<p class="organColor ellipsis leftpad"><span>护士长</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li>
+										<p class="Color2 leftpad">护士姓名</p>
+										<p class="organColor ellipsis leftpad"><span>护士</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li>
+										<p class="Color2 leftpad">护士姓名</p>
+										<p class="organColor ellipsis leftpad"><span>护士长</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li>
+										<p class="Color2 leftpad">护士姓名</p>
+										<p class="organColor ellipsis leftpad"><span>护士</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li>
+									<li>
+										<p class="Color2 leftpad">护士姓名</p>
+										<p class="organColor ellipsis leftpad"><span>护士长</span><span class="organN"><b>科室：</b><b class="deptName">内科</b></span></p>
+									</li> 
+								</ul>
+								<div class="row">
+									<div class="col-sm-12  col-xs-12 actleft">
+										<span class="docnumber">共<b>20</b>名护士</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-xs-12 actleft">
+											<ul class="pagination pagination-sm positin2"> 
+											    <li><a href="#"><<</a></li>
+											    <li><a href="#"><</a></li> 
+											    <li class="dropdown"> 
+									                <a href="#" class="dropdown-toggle" data-toggle="dropdown">1
+									                    <b class="caret"></b> 
+									                </a> 
+									                <ul class="dropdown-menu"> 
+									                    <li> 
+									                        <a id="action-1" href="#">1</a> 
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">2</a> 
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">3</a> 
+									                    </li> 
+									                    <li class="divider"></li> 
+									                    <li> 
+									                        <a href="#">4</a> 
+									                    </li> 
+									                </ul> 
+									            </li> 
+											    <li><a href="#">></a></li> 
+											    <li><a href="#">>></a></li> 
+											</ul>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<!--<div class="row acttop">
+								<div class="col-sm-4  col-xs-4 actleft">
+									<span class="docnumber">共<b>20</b>个科室</span>
+								</div>
+								<div class="col-sm-4  col-xs-4 actleft centerpad">
+									<span class="docnumber">共<b>20</b>名医生</span>
+								</div>
+								<div class="col-sm-4  col-xs-4 actleft">
+									<span class="docnumber">共<b>20</b>名护士</span>
+								</div>
+						</div>-->
+						<!--<div class="row">
+							<div class="col-sm-4 col-xs-4 actleft">
+									<ul class="pagination pagination-sm positin2"> 
+									    <li><a href="#"><<</a></li>
+									    <li><a href="#"><</a></li> 
+									    <li class="dropdown"> 
+							                <a href="#" class="dropdown-toggle" data-toggle="dropdown">1
+							                    <b class="caret"></b> 
+							                </a> 
+							                <ul class="dropdown-menu"> 
+							                    <li> 
+							                        <a id="action-1" href="#">1</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">2</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">3</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">4</a> 
+							                    </li> 
+							                </ul> 
+							            </li> 
+									    <li><a href="#">></a></li> 
+									    <li><a href="#">>></a></li> 
+									</ul>
+							</div>
+							<div class="col-sm-4 col-xs-4 actleft centerpad">
+									<ul class="pagination pagination-sm positin2"> 
+									    <li><a href="#"><<</a></li>
+									    <li><a href="#"><</a></li> 
+									    <li class="dropdown"> 
+							                <a href="#" class="dropdown-toggle" data-toggle="dropdown">1
+							                    <b class="caret"></b> 
+							                </a> 
+							                <ul class="dropdown-menu"> 
+							                    <li> 
+							                        <a id="action-1" href="#">1</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">2</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">3</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">4</a> 
+							                    </li> 
+							                </ul> 
+							            </li> 
+									    <li><a href="#">></a></li> 
+									    <li><a href="#">>></a></li> 
+									</ul>
+							</div>
+							<div class="col-sm-4 col-xs-4 actleft">
+									<ul class="pagination pagination-sm positin2"> 
+									    <li><a href="#"><<</a></li>
+									    <li><a href="#"><</a></li> 
+									    <li class="dropdown"> 
+							                <a href="#" class="dropdown-toggle" data-toggle="dropdown">1
+							                    <b class="caret"></b> 
+							                </a> 
+							                <ul class="dropdown-menu"> 
+							                    <li> 
+							                        <a id="action-1" href="#">1</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">2</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">3</a> 
+							                    </li> 
+							                    <li class="divider"></li> 
+							                    <li> 
+							                        <a href="#">4</a> 
+							                    </li> 
+							                </ul> 
+							            </li> 
+									    <li><a href="#">></a></li> 
+									    <li><a href="#">>></a></li> 
+									</ul>
+							</div>
+						</div>-->
+						
+						
+					</div>
+				</div>
+				
+			</div>
+	</body>
+</html>

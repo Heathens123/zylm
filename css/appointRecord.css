@@ -1,0 +1,184 @@
+
+
+
+
+.container-top{
+	padding-left: 30px;
+	font-family: "microsoft yahei";
+	padding-top: 0
+}
+
+.tableHead,.tableBody{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+
+.tableWrap{
+	margin-top: 10px;
+	padding: 0 15px;
+}
+.tableHead{
+	height: 50px;
+	background: #7e272d;
+}
+.tableBody{
+	height: 50px;
+	
+}
+
+.ellipsis2{
+	overflow: hidden;  
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ellipsis{
+	text-overflow: -o-ellipsis-lastline;  
+	overflow: hidden;  
+	text-overflow: ellipsis;  
+	display: -webkit-box;  
+	-webkit-line-clamp: 2;  
+	-webkit-box-orient: vertical;
+}
+.common{
+	border-top: none;
+	height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	padding-top: 15px;
+	cursor: pointer;
+}
+.combody{
+	text-align: center;
+	height: 50px;
+	padding-top: 15px;
+	color: #7e272d;
+	font-size: 15px;
+	/*border: 1px solid lightgray;
+	border-top: none;*/
+}
+.cancelApint{
+	cursor: pointer;
+}
+.cancelApint a,.cancelApint a:hover{
+	color: #7e272d;
+}
+.noboeder{
+	/*border-right: none;*/
+}
+.appintment{
+	display: inline-block;
+	text-align: center;
+	height: 30px;
+	font-size: 14px;
+	background: #c9302c;
+	color: white;
+	border-radius: 4px;
+	padding-top: 5px;
+}
+.padtop{
+	padding-top: 10px !important;
+}
+.appintment:hover{
+	text-decoration: none;
+	color: white;
+
+}
+.padtop a:hover{
+	text-decoration: none;
+}
+.butt{
+	text-align: center;
+}
+.recordNum{
+	padding-left: 3%;
+}
+.recordNum span{
+	font-size: 15px;
+}
+.recordMargin{
+	margin-top: 30px;
+}
+.myApoint{
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	font-weight: bold;
+	color:#7e272d;
+	/*border-bottom: 1px solid lightgray;
+	padding-bottom: 15px;*/
+	padding-top: 20px
+
+}
+.medicImg{
+	width: 100%;
+	
+}
+.medicImgWrap{
+	max-height: 300px;
+	overflow: hidden;
+}
+/*表格开始*/
+.tableWrap{
+	padding: 0 13px;
+}
+.tabhead{
+	background: #7e272d;
+	color: white;
+}
+
+/*表格结束*/
+a{
+	cursor: pointer;
+}
+@media (min-width: 992px){
+	
+	.Surplus{
+		width: 8.333333% !important;
+	}
+	
+	.appintment{
+		width: 30%;
+	}
+
+}
+@media (max-width: 991px){
+	
+	.common,.combody{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.appint{
+		width: 30%
+	}
+}
+@media (max-width: 768px){
+	.tableWrap{
+		padding: 0;
+	}
+	.medicImgWrap{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.table-responsive{
+		border: none;
+	}
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.container>.navbar-header{
+		margin-right: 0;
+	}
+}
+@media (max-width: 568px){
+	.Times{
+		padding-top: 2px !important;
+	}
+	.myApoint{
+		font-size: 16px !important;
+	}
+	
+}

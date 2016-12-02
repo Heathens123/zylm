@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/scrollNav.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/defaultwipe.css" />
+		<link rel="stylesheet" type="text/css" href="css/picScroll.css"/>
+		<script type="text/javascript" src="js/picScroll.js"></script>
+		<title>中医联盟首页</title>
+		<script type="text/javascript">
+			$(function(){
+				//点击LOGO跳转到首页
+				$('.web_logo').on('click',function(){
+					$('.contentWrap').load('html/index.html');
+					$(this).parents('.navDefault').find('.navComon').first().addClass('DotActive');
+					$(this).parents('.navDefault').find('.navComon').first().siblings().removeClass('DotActive');
+				});
+
+				//首次加载首页
+				$('.contentWrap').load('html/index.html',function(){
+					$('.backBorder').on('mouseover',function(){
+						$(this).addClass('backActive');
+						$(this).siblings().removeClass('backActive');
+						$(this).parent('.docpadding').siblings().find('.backBorder').removeClass('backActive');
+					})
+				});
+				
+				//点击导航条切换
+				$('.navComon').on('click',function(){
+					$(this).addClass('DotActive');
+					$(this).siblings().removeClass('DotActive');
+					var state=$(this).attr('state');
+					$('.contentWrap').load('html/'+state+'.html',function(){
+						$('.backBorder').on('mouseover',function(){
+							$(this).addClass('backActive');
+							$(this).siblings().removeClass('backActive');
+							$(this).parent('.docpadding').siblings().find('.backBorder').removeClass('backActive');
+						})
+					});
+				})
+				//点击跳转到登陆页面
+				$('.login').on('click',function(){
+					$('.contentWrap').load('login.html');
+				})
+				//点击跳转到注册页面
+				$('.register').on('click',function(){
+					$('.contentWrap').load('register.html',function(){
+						$('.landactive').addClass("Landafter");
+					});
+				})
+				$('.fillpage').on('click',function(){
+					$('.contentWrap').load('infoFill.html',function(){
+						$('.customer').addClass('btn_default');
+					});
+				});
+				
+				//点击显示提示框
+				$('.lianmeng').on('click',function(){
+					$('#tanchuang').modal({
+						show:true,
+						backdrop:'static',
+						keyboard: false
+					});
+				})
+				//跳转到预约列表页面
+				$('.yuyue').on('click',function(){
+					$('.contentWrap').load('html/organization/table.html');
+				})
+				
+				$('.apprecored').on('click',function(){
+					$('.contentWrap').load('html/PatientServices/appointRecord.html');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!--弹出框-->
+		<div class="modal fade"  id="tanchuang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span class="cancle" aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="modal-title">标题</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p class="tips">提示信息写这里！</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="Btn btn btn-default" data-dismiss="modal">取消</button>
+		        <button type="button" class="Btn btn btn-default">确认</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+			<!--顶部导航-->
+			<div class="container">
+				<ul class="navHead">
+					<li class="inblock login"><a href="javascript:void(0);" class="log_pading">登录</a><b class="loginLine"></b></li>
+					<li class="inblock register"><a href="javascript:void(0);" class="log_pading" style="padding-right: 0;">注册</a></li>
+				</ul>
+				<!--登陆之后的状态-->
+				<div class="row Landafter landactive">
+					<div class="col-md-2 col-md-offset-10 col-xs-3 col-xs-offset-9">
+						<div class="dropdown navbarRight">
+							  <button class="btn btn-default dropdown-toggle customer" type="button" id="dropdownMenu1" data-toggle="dropdown">
+							    	xxx欢迎您登陆
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu dropMenu" role="menu" aria-labelledby="dropdownMenu1">
+								    <li class="fillpage" role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);">个人资料</a></li>
+								    <li class="outLand" role="presentation"><a role="menuitem" tabindex="-1" href="javascript:void(0);">退出登录</a></li>
+							  </ul>
+						</div>
+					</div>
+				</div>
+				
+				<!--登陆之后的状态--end-->
+				
+				<!--<div class="Search">
+					<a href="search.html"><img src="img/search.png"/></a>
+				</div>-->
+			</div>
+			<nav class="navbar navbar-default navDefault" role="navigation">
+				<div class="container">
+					<div class="navbar-header navbarHeader">
+						<button type="button" class="navbar-toggle collapsed changebutt" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand navBrand" href="#">
+							<img class="web_logo" src="img/web_03.png"/>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse navbarCollapse" id="bs-example-navbar-collapse-1" style="padding-right: 0;">
+						<ul class="nav navbar-nav navbarNav">
+							
+							<li state="index" class="navComon DotActive"><a class="LinkA  " href="javascript:void(0);">首页</a></li>
+							<li state="unionIntruduce/unionIntruduce" class="navComon"><a class="LinkA " href="javascript:void(0);">联盟介绍</a></li>
+							<li state="newsCenter/newsCenter" class="navComon"><a class="LinkA " href="javascript:void(0);">新闻中心</a></li>
+							<li state="organization/organtList" class="navComon "><a class="LinkA " href="javascript:void(0);">社区机构</a></li>
+							<li state="PatientServices/PatientServices" class="navComon "><a class="LinkA " href="javascript:void(0);">患者服务</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="underline underline2">
+				<img src="img/underline.jpg"/>
+			</div>
+			
+			
+			<!--内容区-->
+			<div class="contentWrap">
+				
+				
+			</div>
+			
+			
+			
+			<!--底部-->
+			<div class="underline footLine">
+				<img src="img/underline.jpg"/>
+			</div>
+			<div class="c_footer row">
+				<div class="container">
+					<div class="col-md-8 klft">
+						<div class="cont row">
+							<div class="col-md-12" style="padding-left: 0;">
+								<h3 class="l_head" style="padding-left: 0;">友情链接</h3>
+								<div class="platform row">
+									<div class="col-sm-12">
+										<ul class="platform">
+											<li  class="lianmeng"><img src="img/web_icon (2).png"/><span class="intro">智慧健康社区</span></li>
+											<li class="yuyue"><img src="img/web_icon (2).png"/><span class="intro">智慧健康社区</span></li>
+											<li class="apprecored"><img src="img/web_icon (2).png"/><span class="intro">智慧健康社区</span></li>
+										</ul>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="cont row">
+							<div class="col-md-12 paDDleft">
+								<h3 class="l_foot">联系方式</h3>
+								<ul class="detail">
+									<li><span class="comm">地址：</span><span class="Value">智慧健康社区</span></li>
+									<li><span class="comm">电话：</span><span class="Value">智慧健康社区</span></li>
+									<li><span class="comm">邮箱：</span><span class="Value">智慧健康社区</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="l_footer row">
+							<div class="col-md-12 copyright">copyright &nbsp&nbsp 2014-2018@成都金融控股集团有限公司 &nbsp&nbsp I  &nbsp&nbsp蜀ICP备0000000000号—1</div>
+						</div>
+					</div>
+					<div class="col-md-4 QR">
+						<div class="Wrrp">
+							<img src="img/QRcode.png"/>
+							<div class="textinfo">
+								<span class="wacthQR">扫描关注二维码</span>
+								<div class="content">
+									<img src="img/wechat.jpg"/>
+								</div>
+								<div class="download">
+									<span class="dleft">微信公众号</span>
+									<span class="dright">APP下载</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</body>
+</html>

@@ -1,0 +1,29 @@
+
+
+
+
+.artTitle{
+	padding-top: 10px;
+	width: 100%;
+	text-align: center;
+	color: #434343;
+}
+.source{
+	margin-bottom: 30px;
+	color: #7D7D7D;
+	text-align: center;
+}
+.year{
+	margin-right: 10px;
+}
+.clock{
+	margin-right: 20px;
+}
+.Textindent{
+	text-indent: 28px;
+	color: #444444;
+}
+.bottomdistance{
+	/*padding: 0 20px 0 30px;*/
+	padding:0px;
+}
